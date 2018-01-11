@@ -10,9 +10,9 @@ if (mouse_check_button(mb_left)) && (firingdelay < 0)
 	recoil = 4;
 	firingdelay = 5;
 	ScreenShake(2,10);
-	with (instance_create_layer(x,y,"Bullets",obj_soyBullet))
+	with (instance_create_layer(x+20,y,"Bullets",obj_soyBullet))
 	{
-		speed = 25;
+		speed = 15;
 		direction = other.image_angle + random_range (-3, 3);
 		image_angle = direction;
 	}
