@@ -1,0 +1,73 @@
+//Code for using a controller
+
+//This goes in the step event on the Player right under the keyboard commands.
+
+if (key_left) || (key_right) || (key_jump)
+{
+	controller = 0;
+}
+
+if (abs(gamepad_axis_value(0,gp_axislh) > 0.2)
+{
+
+	key_left = abs(min(gamepad_axis_value(0,gp_axislh),0));
+	key_right = max(gamepad_axis_value(0,gp_axislh),0);
+	controller = 1;
+
+}
+
+if (gamepad_button_check_pressed(0,gp_face1)
+{
+	key_jump 1;
+	controller = 1;
+
+}
+
+//This part goes into gun object
+
+//This goes into the create event
+
+controllerangle = 0;
+
+//This goes into Begin Step. Paste it over line: image_angle = point_direction(x,y,mouse_x,mouse_y);
+
+if (obj_Player.controller ==0)
+{
+	image_angle = point_direction(x,y,mouse_x,mouse_y);
+
+}
+else
+{
+	var controllerh = gamepad_axis_value (0,gp_axisrh);
+	var controllerv = gamepad_axis_value (0,gp_axisrv);
+	if (abs(controllerh) > 0.2) || (abs_controllerv) > 0.2)
+	{
+		controllerangle = point_direction(0,0,controllerh,controllerv)
+	}
+	image_angle = contollerangle;
+}
+
+
+//Replace this line: if (mouse_check_button(mb_left)) && (firingdelay < 0)
+//With this:
+
+if (mouse_check_button(mb_left)) || gamepad_button_check(0,gp_shoulderrb))  && (firingdelay < 0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+What will animate on stage:
+
+The sun will move with character
+
+Red Lights on large building will pulse from bottom to top every 20 secs
+
+Smoke stacks will give off smoke from the black background piece.
+
+All fans will animate
+
+Occasional flying ship will go by 
+
+Stage 1 part 1:
+
+Smoke will be coming from the building you are standing on
+
+Make multiple moving billboards and signs
+
+Stage 2 part 2:
+
+Billboard for the mini boss fight needs to be a commercial for something government.
+It should last for what could be considered 2/3 of the length of time it will take to
+beat the boss. Then it should have stills of other ads in neccessary.
+The miniboss will destroy the billboard after  4 big hits.
+

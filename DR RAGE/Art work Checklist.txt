@@ -1,0 +1,55 @@
+
+
+Dr. Rage game checklist
+
+Characters
+       
+Dr.Rage
+	-Walk
+	-Run
+	-Shoot
+	-Jump
+	-Quick Dash
+	-Multi-Missle
+	-Rock Boots
+	-Mortor 
+	-Grappling Hand
+	-Block
+
+Soldier (sword)
+	-Run
+	-Jump
+	-Attack (3 combos)
+	-Block
+
+Soldier (gun)
+	-Run
+	-Jump
+	-Shoot Standing
+	-Shoot Crouched
+
+Soldier with Hoover Vehicle
+	-Vehicle movement
+	-EMP pulse
+
+
+Stage 1: Escape from the Lab (Demo)
+
+
+	-Scatter Shot
+
+Super Soldier
+	-Run
+	-Charge
+	-Punch
+	-Hammer Slam
+	-Charge up Growl
+
+Laser Globe
+	-Movement
+	-Laser Shot
+
+
+
+
+	
