@@ -1,7 +1,10 @@
-if (!eel_added) && (obj_Player.x >= add_eel_at) {
-  show_debug_message("add that eel!");
-  instance_create_layer(add_eel_at+200, y-100, "Enemies", obj_eelShocker);
+out_of_range = (reset_bottom > obj_Player.x || obj_Player.x > reset_top);
+within_range = (reset_bottom < obj_Player.x && obj_Player.x < reset_top);
+
+if !eel_added && (num_eels < 3) && within_range {
+  instance_create_layer(add_eel_at, 400, "Enemies", obj_eelShocker);
   eel_added = true;
-} else {
-  //show_debug_message(obj_Player.x);
+  num_eels = num_eels + 1;
+} else if eel_added && out_of_range {
+  eel_added = false;
 }
