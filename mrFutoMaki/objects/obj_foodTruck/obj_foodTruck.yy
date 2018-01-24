@@ -4,26 +4,7 @@
     "mvc": "1.0",
     "name": "obj_foodTruck",
     "eventList": [
-        {
-            "id": "773dea2f-5172-4cb1-b443-50875a31c554",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "e4481738-85fa-4d5a-9643-95fdb7b7c49c"
-        },
-        {
-            "id": "1ec8c352-025a-432d-b784-d61bb26f85c3",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "e4481738-85fa-4d5a-9643-95fdb7b7c49c"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
