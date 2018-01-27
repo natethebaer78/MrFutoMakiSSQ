@@ -10,4 +10,4 @@ shake_magnitude = 6;
 shake_remain = 6;
 buff = 32;
 
-
+instance_create_layer(50, 25, "UserInterface", obj_powerbar);

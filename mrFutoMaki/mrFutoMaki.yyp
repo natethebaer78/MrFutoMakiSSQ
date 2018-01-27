@@ -775,6 +775,25 @@
             }
         },
         {
+            "Key": "e89f6629-c078-4518-bc3e-6fbece3ea111",
+            "Value": {
+                "id": "1659ee32-7d63-4428-b540-5817a5b1c29d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_powerbar\/obj_powerbar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e967d990-d4bb-4d8a-be17-d787319188f8",
             "Value": {
                 "id": "d87420b3-c180-49da-9799-dbf53df69f14",
