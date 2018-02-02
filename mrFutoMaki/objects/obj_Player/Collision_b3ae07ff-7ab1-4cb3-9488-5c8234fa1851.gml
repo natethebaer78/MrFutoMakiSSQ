@@ -2,7 +2,7 @@ can_be_hit = is_undefined(hit_cooldown) || (get_timer() > (hit_cooldown + COOLDO
 
 if can_be_hit {
   if (player_hp > 0) {
-	lost_hp = ATTACK_VAUES[? "eelShocker"];
+	lost_hp = ATTACK_VAUES[? "shrimpSoldier"];
     player_hp -= PLAYER_START_HP * lost_hp;
     hit_cooldown = get_timer();
   } 
