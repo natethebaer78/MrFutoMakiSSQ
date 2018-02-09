@@ -2,9 +2,12 @@ can_be_hit = is_undefined(hit_cooldown) || (get_timer() > (hit_cooldown + COOLDO
 
 if can_be_hit {
   if (player_hp > 0) {
-    player_hp -= 1;
+	lost_hp = ATTACK_VAUES[? "eelShocker"];
+    player_hp -= PLAYER_START_HP * lost_hp;
     hit_cooldown = get_timer();
-  } else {
+  } 
+  
+  if (player_hp <= 0) {
     instance_destroy();
   }
 }

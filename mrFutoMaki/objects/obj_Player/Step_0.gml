@@ -51,8 +51,9 @@ y = y + vsp;
 
 //Animation
 
-if (!place_meeting(x,y+1,spr_floor))
+if (!place_meeting(x,y+1,obj_floor))
 {
+	show_debug_message("Playerjump")
  sprite_index = spr_PlayerJump;
  image_speed = 0;
  if (sign(vsp) > 0) image_index = 1; else image_index = 0;
@@ -62,12 +63,15 @@ else
 	image_speed = 1;
 	if (hsp == 0) 
 	{
-		sprite_index = spr_Player; 
+	show_debug_message("Playerjump")	
+	sprite_index = spr_Player; 
 	}
 
 	else 
 
-	 {
+	 {	
+		 
+		 
 		sprite_index = spr_PlayerRun;
 	 }
 

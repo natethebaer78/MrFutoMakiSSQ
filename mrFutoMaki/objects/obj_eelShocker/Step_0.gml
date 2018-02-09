@@ -27,7 +27,7 @@ y = y + vsp;
 
 //Animation
 
-if (!place_meeting(x,y+1,spr_floor))
+if (!place_meeting(x,y+1,obj_floor))
 {
  sprite_index = spr_eelShocker;
  image_speed = 0;
