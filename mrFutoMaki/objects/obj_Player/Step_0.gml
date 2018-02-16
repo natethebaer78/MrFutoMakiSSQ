@@ -3,7 +3,7 @@
 if(hascontrol) {
   key_left = keyboard_check(vk_left);
 	key_right = keyboard_check(vk_right);
-	key_jump = keyboard_check_pressed(vk_alt);
+	key_jump = keyboard_check_pressed(vk_space);                                           
 
 
 	//Caluculate Movement
@@ -45,17 +45,17 @@ y += vsp;
 //Animation
 if (!place_meeting(x,y+1,obj_floor))
 {
-	show_debug_message("Playerjump")
  sprite_index = spr_PlayerJump;
  image_speed = 0;
  if (sign(vsp) > 0) image_index = 1; else image_index = 0;
 }
 else
 {
+	if (sprite_index == spr_PlayerJump) audio_play_sound(snd_landing,4,false);
 	image_speed = 1;
 	if (hsp == 0)
 	{
-	show_debug_message("Playerjump")
+	
 	sprite_index = spr_Player;
 	}
 

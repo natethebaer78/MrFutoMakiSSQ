@@ -22,10 +22,11 @@ if instance_exists(obj_Player) {
 
   firingdelay = firingdelay - 1;
   recoil      = max(0,recoil - 1);
-  if (keyboard_check(vk_space)) && (firingdelay < 0) {
+  if (keyboard_check(ord("B"))) && (firingdelay < 0) {
 		recoil = 4;
 		firingdelay = 5;
-		ScreenShake(2,10);
+		ScreenShake(2,10);		
+		audio_play_sound(snd_bullet,7,false);
 		with (instance_create_layer(x+20,y,"Bullets",obj_soyBullet)) {
 		  speed     = 15;
 		  direction = other.image_angle + random_range(-3, 3);
