@@ -3,7 +3,7 @@
 if(hascontrol) {
   key_left = keyboard_check(vk_left);
 	key_right = keyboard_check(vk_right);
-	key_jump = keyboard_check_pressed(vk_space);                                           
+	key_jump = keyboard_check_pressed(vk_space);
 
 
 	//Caluculate Movement
@@ -55,7 +55,7 @@ else
 	image_speed = 1;
 	if (hsp == 0)
 	{
-	
+
 	sprite_index = spr_Player;
 	}
 

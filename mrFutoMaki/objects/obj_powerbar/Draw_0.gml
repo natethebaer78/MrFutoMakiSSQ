@@ -12,10 +12,13 @@ draw_set_color(c_lime);
 if (instance_exists(obj_Player)) {
   percent	 = (obj_Player.player_hp / obj_Player.PLAYER_START_HP);
   lost_power = PB_START_WIDTH - (PB_START_WIDTH * percent);
+	new_pb_width = PB_START_WIDTH - lost_power
   
-  if (power_bar_width > (PB_START_WIDTH - lost_power)) {
+  if (power_bar_width > new_pb_width) {
     power_bar_width -= 3;
-  }
+  } else if (power_bar_width < new_pb_width) {
+		power_bar_width += 3;
+	}
   draw_to_x  = x_start + power_bar_width;
 } else {
   draw_to_x = x_start;
