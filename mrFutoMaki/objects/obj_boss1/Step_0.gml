@@ -1,4 +1,4 @@
-
+obj
 vsp = vsp + grv;
 
 //Horizontal Collision
