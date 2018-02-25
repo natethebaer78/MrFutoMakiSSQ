@@ -1,1 +1,1 @@
- //audio_play_sound(music_Stage1,1000,true);
+// audio_play_sound(music_Stage1,1000,true);

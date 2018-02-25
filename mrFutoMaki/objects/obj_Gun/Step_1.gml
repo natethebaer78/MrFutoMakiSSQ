@@ -1,7 +1,7 @@
 if instance_exists(obj_Player) {
   x = obj_Player.x+2;
   y = obj_Player.y+6;
-	
+
 	half_width = camera_get_view_width(view_camera[0]) / 2;
 
 	if (keyboard_check(vk_left)) {
@@ -9,7 +9,7 @@ if instance_exists(obj_Player) {
 	} else if (keyboard_check(vk_right)) {
 		x_dir = obj_camera.x + half_width;
 	}
-	
+
 	if (keyboard_check(vk_up)) {
 		y_dir = 0;
 	} else if (keyboard_check(vk_down)) {
@@ -25,8 +25,8 @@ if instance_exists(obj_Player) {
   if (keyboard_check(ord("B"))) && (firingdelay < 0) {
 		recoil = 4;
 		firingdelay = 5;
-		ScreenShake(2,10);		
-		audio_play_sound(snd_bullet,7,false);
+		ScreenShake(2,10);
+		// audio_play_sound(snd_bullet,7,false);
 		with (instance_create_layer(x+20,y,"Bullets",obj_soyBullet)) {
 		  speed     = 15;
 		  direction = other.image_angle + random_range(-3, 3);
