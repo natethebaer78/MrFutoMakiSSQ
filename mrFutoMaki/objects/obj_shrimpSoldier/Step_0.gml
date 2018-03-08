@@ -1,5 +1,25 @@
+should_jump  = is_undefined(jump_cooldown)  || (get_timer() > (jump_cooldown + JUMP_INTERVAL))
+should_shoot = is_undefined(shoot_cooldown) || (get_timer() > (shoot_cooldown + SHOOT_INTERVAL))
 
 vsp = vsp + grv;
+
+if should_jump {
+	vsp = -8;
+	jump_cooldown = get_timer();
+}
+
+if should_shoot {
+	with (instance_create_layer(x,y,"Bullets",obj_shrimpBullet)) {
+		if other.hsp > 0 {
+	  	speed = 10;
+		} else {
+			speed = -10;
+		}
+	  direction = other.image_angle + random_range(-3, 3);
+	  image_angle = direction;
+	}
+	shoot_cooldown = get_timer();
+}
 
 //Horizontal Collision
 if (place_meeting(x+hsp,y,obj_floor))
@@ -36,12 +56,12 @@ if (!place_meeting(x,y+1,obj_floor))
 else
 {
 	image_speed = 1;
-	if (hsp == 0) 
+	if (hsp == 0)
 	{
-		sprite_index = spr_shrimpSoldier; 
+		sprite_index = spr_shrimpSoldier;
 	}
 
-	else 
+	else
 
 	 {
 		sprite_index = spr_shrimpSoldierRun;
