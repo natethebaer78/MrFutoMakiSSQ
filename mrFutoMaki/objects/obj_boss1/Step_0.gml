@@ -1,5 +1,20 @@
+should_shoot = is_undefined(shoot_cooldown) || (get_timer() > (shoot_cooldown + SHOOT_INTERVAL))
 
 vsp = vsp + grv;
+
+if should_shoot {
+	sprite_index = spr_bossPowerPunch;
+	with (instance_create_layer(x,y,"Bullets",obj_boss1Bullet)) {
+		if other.hsp > 0 {
+	  	speed = 10;
+		} else {
+			speed = -10;
+		}
+	  direction = other.image_angle + random_range(-3, 3);
+	  image_angle = direction;
+	}
+	shoot_cooldown = get_timer();
+}
 
 //Horizontal Collision
 if (place_meeting(x+hsp,y,obj_wall))

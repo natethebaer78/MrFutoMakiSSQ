@@ -1,5 +1,5 @@
-JUMP_INTERVAL  = random_range(3, 8) * 1000000;
-SHOOT_INTERVAL = random_range(2, 6) * 1000000;
+JUMP_INTERVAL  = random_range(3, 4) * 1000000;
+SHOOT_INTERVAL = random_range(2, 4) * 1000000;
 jump_cooldown  = undefined;
 shoot_cooldown = undefined;
 
